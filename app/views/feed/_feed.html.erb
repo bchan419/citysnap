@@ -1,0 +1,13 @@
+
+
+	<% if !@recent_media_items.nil?  %>
+		<% @recent_media_items["data"].each do |media| %>	
+			<a href="<%= media.images.standard_resolution.url%>">
+				<img src="<%= media.images.thumbnail.url%>">
+			</a>
+
+		<% end %>
+	<% end %>
+
+
+
